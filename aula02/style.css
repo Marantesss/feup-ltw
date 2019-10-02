@@ -1,0 +1,123 @@
+body {
+    font-family: Verdana, Georgia, 'Times New Roman', Times, serif;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* HEADER */
+body > header {
+    text-decoration: none;
+    background-color: #046DD5;
+}
+
+/* Remove stubborn blue line */
+body > header a {
+    text-decoration: none;
+    color: white;
+}
+
+body > header h1 {
+    font-size: 22px;
+    padding: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+body > header h2 {
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+#signup {
+    font-weight: normal;
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+/* Navbar */
+#menu > ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    list-style-type: none;
+    border-width: 20px;
+}
+
+#menu > input {
+    display: none;
+}
+
+#menu > ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu > ul li {
+    padding: 15px;
+    border-top-width: 5px;
+    border-top-style: solid;
+}
+
+#menu > ul :nth-child(1) {
+    border-top-color: red;
+}
+
+#menu > ul :nth-child(2) {
+    border-top-color: green;
+}
+
+#menu > ul :nth-child(3) {
+    border-top-color: purple;
+}
+
+#menu > ul :nth-child(4) {
+    border-top-color: orange;
+}
+
+#menu > ul :nth-child(5) {
+    border-top-color: lightskyblue;
+}
+
+#menu > ul :nth-child(6) {
+    border-top-color: violet;
+}
+
+/* Related */
+#related {
+    padding: 15px;
+    background-color: #2A2F33;
+    color: white;
+}
+
+#related a {
+    text-decoration: none;
+    color: white;
+}
+
+#related p {
+    color: rgb(184, 184, 184);
+    font-size: 14px;
+}
+
+/* News */
+#news img {
+    position: relative;
+    width: 100%;
+}
+
+#news article {
+    padding-top: 10px;
+}
+
+#news article header h1 {
+    top: 8px;
+    left: 16px;
+}
