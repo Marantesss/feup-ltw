@@ -1,9 +1,5 @@
 body {
-    font-family: Verdana, Georgia, 'Times New Roman', Times, serif;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding-left: 40px;
-    padding-right: 40px;
+    font-family:  Verdana, Georgia, 'Times New Roman', Times, serif;
 }
 
 /* HEADER */
@@ -42,13 +38,18 @@ body > header h2 {
     margin: 0px;
 }
 
+
+#signup a + a::before {
+    content: "|";
+    margin: 10px;
+}
+
 /* Navbar */
 #menu > ul {
     margin: 0px;
     padding: 0px;
     text-align: center;
     list-style-type: none;
-    border-width: 20px;
 }
 
 #menu > input {
@@ -115,9 +116,64 @@ body > header h2 {
 
 #news article {
     padding-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#news article header {
+    position: absolute;
+    width: 15%;
+    z-index: 1;
 }
 
 #news article header h1 {
-    top: 8px;
-    left: 16px;
+    margin: 20px;
+    font-family:  Verdana, 'Times New Roman', Times, serif;
+    text-shadow: 4px 4px 5px black;
+}
+
+#news article header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#news article p:first-of-type::first-letter {
+    font-size: 200%;
+}
+
+#news article p {
+    margin: 1em;
+}
+
+#news article footer {
+    background-color: #E1493E;
+    padding: 1em;
+    color: white;
+    font-family:  Verdana, 'Times New Roman', Times, serif;
+}
+
+.author::before {
+    content: "By "
+}
+
+.tags {
+    padding: 1em;
+}
+
+.tags a {
+    color: white;
+    text-decoration-color: white;
+}
+
+.date {
+    padding: 1em;
+}
+
+.comments {
+    padding: 1em;
+    color: white;
+    text-decoration-color: white;
+}
+
+.comments::after {
+    content: " comments"
 }
